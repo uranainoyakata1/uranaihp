@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-pearl text-ink antialiased;
+}
+
+::selection {
+  background: rgba(184, 154, 85, 0.3);
+  color: #101014;
+}
+
+.container-xl {
+  @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+}
+
+.section-pad {
+  @apply py-16 sm:py-20;
+}
+
+.card {
+  @apply rounded-3xl border border-black/10 bg-white/90 shadow-soft;
+}
+
+.card-dark {
+  @apply rounded-3xl border border-white/10 bg-night/90 text-white shadow-soft;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/80 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-ink/80;
+}
+
+.cta-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+}
+
+.cta-gold {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-night transition hover:brightness-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+}
+
+.cta-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/40 px-6 py-3 text-sm font-semibold text-ink transition hover:border-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold;
+}
+
+.grid-mesh {
+  background-image: linear-gradient(to right, rgba(16, 16, 20, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 16, 20, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
