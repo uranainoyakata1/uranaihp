@@ -19,6 +19,13 @@ body {
   color: var(--ink);
   background: var(--white);
   line-height: 1.8;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+p,
+li {
+  line-height: 1.8;
 }
 
 a {
